@@ -1,0 +1,24 @@
+
+{% macro contact_list(title, links="", email="") %}
+<div class="flex sm:flex-row flex-col py-4">
+  <div class="sm:basis-2/5 grow pb-4 sm:pb-0">
+    <div class="prose dark:prose-invert">
+      <h2 class="">{{ title }}</h2>
+    </div>
+  </div>
+  <div class="sm:basis-3/5 grow">
+    <ul>
+      {% if email -%}
+      <li class="font-bold text-lg pb-4 text-blue-600 dark:text-blue-500 hover:text-blue-800 dark:hover:text-blue-300 visited:text-purple-600 dark:visited:text-violet-600 flex-row flex-nowrap flex">
+      <i>{{ icons::factory(icon="mail",classes="inline h-6 w-6 flex-no-shrink") }}</i>&nbsp;
+      <a href="mailto:{{ email }}"> {{ email }} </a></li>
+      {% endif -%}
+      {% for link in links -%}
+      <li class="font-bold text-lg pb-4 text-blue-600 dark:text-blue-500 hover:text-blue-800 dark:hover:text-blue-300 visited:text-purple-600 dark:visited:text-violet-600 stroke-blue-600 dark:stroke-blue-500 fill-blue-600 dark:fill-blue-500 hover:stroke-blue-800 hover:fill-blue-800 dark:hover:fill-blue-300 dark:hover:stroke-blue-300 visited:stroke-purple-600 visited:fill-purple-600 dark:visited:stroke-violet-600 dark:visited:fill-violet-600">
+        {% if link.icon -%}<i>{{ icons::factory(icon=link.icon,classes="inline h-6 w-6 flex-no-shrink") }}</i>{% endif -%}
+        <a target="_blank" href="{{ link.link }}"> {{ link.name }} </a></li>
+      {% endfor -%}
+    </ul>
+  </div>
+</div>
+{% endmacro %}

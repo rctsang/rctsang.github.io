@@ -1,0 +1,34 @@
+title = "Ryan Tsang"
+base_url = "https://rchtsang.github.io"
+compile_sass = false
+build_search_index = false
+ignored_content = [ "*/blog/_wip-*",]
+
+[translations]
+Biography = "Biography"
+Interests = "Interests"
+Education = "Education"
+toc = "Table of Contents"
+Published = "Published"
+Abstract = "Abstract"
+volume = "volume"
+number = "number"
+pages = "pages"
+
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+
+[markdown]
+highlight_code = true
+
+[extra]
+email = "ryan.ying.tsang[at]gmail.com"
+avatar = "img/avatar.jpg"
+favicon = "img/favicon.ico"
+contact_in_index = true
+[[extra.menu_items]]
+path = "#contacts"
+name = "Contact"
+
