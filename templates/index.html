@@ -42,7 +42,7 @@
             {% for course in section.extra.education.degrees %}
             <li class="py-1">
               <div class="flex flex-row flex-wrap">
-                <div class="prose prose-invert basis-full">
+                <div class="prose dark:prose-invert basis-full">
                   <i>{{ icons::factory(icon="academic",classes="inline h-6 w-6 flex-no-shrink dark:fg-zinc-200") }}</i> {{ course.degree }}, {{ course.year }}
                 </div>
                 <div class="basis-full text-zinc-400 dark:text-zinc-500">
