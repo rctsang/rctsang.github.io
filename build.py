@@ -26,7 +26,7 @@ note: imports all environment variables at invocation
 with open(f"{PARENT_DIR}/../info.yml", 'r') as yf:
     info = yaml.load(yf, yaml.Loader)
 
-RE_MD = re.compile(r"\+{3}(?P<front_matter>.+)\+{3}(?P<content>.+)", re.S)
+RE_MD = re.compile(r"\+{3}(?P<front_matter>.+)\+{3}(?P<content>.+)\s+", re.S)
 
 
 ### TARGETS
@@ -128,7 +128,8 @@ def index():
     with open(f"{PARENT_DIR}/content/_index.md", 'r') as mdf:
         current_data = mdf.read()
 
-    data = RE_MD.sub(f"+++\n{front_matter}\n+++\\g<content>\n", current_data)
+    data = RE_MD.sub(f"+++\n{front_matter}\n+++\\g<content>", current_data)
+    data = data.rstrip('\n') + '\n'
 
     with open(f"{PARENT_DIR}/content/_index.md", 'w') as mdf:
         mdf.write(data)
@@ -156,7 +157,8 @@ def contact():
     with open(f"{PARENT_DIR}/content/contacts.md", 'r') as mdf:
         current_data = mdf.read()
 
-    data = RE_MD.sub(f"+++\n{front_matter}\n+++\\g<content>\n", current_data)
+    data = RE_MD.sub(f"+++\n{front_matter}\n+++\\g<content>", current_data)
+    data = data.rstrip('\n') + '\n'
 
     with open(f"{PARENT_DIR}/content/contacts.md", 'w') as mdf:
         mdf.write(data)
@@ -191,7 +193,8 @@ def publications():
     with open(path, 'r') as mdf:
         current_data = mdf.read()
 
-    data = RE_MD.sub(f"+++\n{index_front_matter}\n+++\\g<content>\n", current_data)
+    data = RE_MD.sub(f"+++\n{index_front_matter}\n+++\\g<content>", current_data)
+    data = data.rstrip('\n') + '\n'
 
     with open(path, 'w') as mdf:
         mdf.write(data)
@@ -245,7 +248,8 @@ def teaching():
     with open(path, 'r') as mdf:
         current_data = mdf.read()
 
-    data = RE_MD.sub(f"+++\n{front_matter}\n+++\\g<content>\n", current_data)
+    data = RE_MD.sub(f"+++\n{front_matter}\n+++\\g<content>", current_data)
+    data = data.rstrip('\n') + '\n'
 
     with open(path, 'w') as mdf:
         mdf.write(data)
