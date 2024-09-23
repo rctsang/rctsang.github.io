@@ -1,5 +1,5 @@
 title = "Ryan Tsang"
-base_url = "https://rchtsang.github.io"
+base_url = "https://rctsang.github.io"
 compile_sass = false
 build_search_index = false
 ignored_content = [ "*/blog/_wip-*",]
