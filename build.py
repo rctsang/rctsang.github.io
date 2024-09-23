@@ -55,7 +55,7 @@ def config():
 
     config = {
         "title": "Ryan Tsang",
-        "base_url": "https://rchtsang.github.io",
+        "base_url": "https://rctsang.github.io",
         "compile_sass": False,
         "build_search_index": False,
         "ignored_content": [
