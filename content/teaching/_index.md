@@ -67,3 +67,4 @@ equipment = [ "TI MSP430", "Oscilloscope", "Multimeter", "Function Generator", "
 
 I've done quite a bit of teaching.
 
+
