@@ -39,12 +39,12 @@ def build_all():
     index()
     contact()
     tailwind()
-    build()
+    build('--output-dir', 'docs', '--force')
 
 
 @target
 def build(*args):
-    run(['zola', 'build', '--output-dir', 'docs', *args])
+    run(['zola', 'build', *args])
 
 @target
 def tailwind(*args):

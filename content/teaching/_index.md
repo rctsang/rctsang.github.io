@@ -65,4 +65,4 @@ equipment = [ "TI MSP430", "Oscilloscope", "Multimeter", "Function Generator", "
 +++
 
 
-Much of experience has been as a teaching assistant for various courses at UC Davis and as an undergraduate student instructor at UC Berkeley.
+Much of my teaching experience has been as a teaching assistant (7 quarters) for various courses related to embedded systems at UC Davis and as an undergraduate student instructor (3 semesters) for EECS16A at UC Berkeley.
