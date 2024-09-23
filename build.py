@@ -44,7 +44,7 @@ def build_all():
 
 @target
 def build(*args):
-    run(['zola', 'build', *args])
+    run(['zola', 'build', '--output-dir', 'docs', *args])
 
 @target
 def tailwind(*args):

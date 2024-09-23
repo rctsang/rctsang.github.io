@@ -65,4 +65,4 @@ equipment = [ "TI MSP430", "Oscilloscope", "Multimeter", "Function Generator", "
 +++
 
 
-I've done quite a bit of teaching.
+Much of experience has been as a teaching assistant for various courses at UC Davis and as an undergraduate student instructor at UC Berkeley.
