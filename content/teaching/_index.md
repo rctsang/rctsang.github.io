@@ -35,6 +35,13 @@ responsibilities = [ "Supervised student lab sections (25+ students) and debugge
 equipment = [ "TI MSP432", "ADALM2000", "TI CCS",]
 
 [[extra.institutions.courses]]
+name = "ENG17 - Circuits I"
+id = "ucd-eng17"
+offerings = [ "FQ23",]
+topics = [ "Resistive Circuits", "Nodal and Mesh Analysis", "Ideal Op-Amps", "Non-periodic Waveforms", "First and Second-Order RLC Circuits", "AC and Phasor Analysis",]
+responsibilities = [ "Host weekly 2-hour discussion sections (10-20 students)", "Host full-class exam review sessions (280+ students online)",]
+
+[[extra.institutions.courses]]
 name = "EEC1 - Intro to Electrical and Computer Engineering"
 id = "ucd-eec1"
 offerings = [ "FQ22",]

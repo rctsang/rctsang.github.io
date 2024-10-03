@@ -10,6 +10,10 @@ icon = "linkedin"
 link = "https://linkedin.com/in/r-tsang/"
 
 [[extra.avatar_icons]]
+icon = "website"
+link = "https://rctsang.github.io"
+
+[[extra.avatar_icons]]
 icon = "github"
 link = "https://github.com/rchtsang"
 
